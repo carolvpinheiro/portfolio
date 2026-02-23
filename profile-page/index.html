@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+  <!-- Load Fonts from CDN -->
+  <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin />
+  <link rel="stylesheet" href="https://api.fonts.coollabs.io/css2?family=Roboto:wght@100..900&display=swap" />
+
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="bg-gray-50">
+  <header class="bg-black px-8 py-2 mb-0 sticky top-0">
+    <div class="mx-auto max-w-7xl flex items-center gap-8">
+      <a class="text-teal-800 text-center items-center flex h-14 w-14" href="#MainContent">
+        <p class="text-3xl bg-teal-300 rounded-full h-14 w-14  items-center p-1 py-2">
+          CV
+          <span class="sr-only">Home</span>
+        </p>
+      </a>
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Global" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a class="text-teal-400 transition hover:text-teal-300" href="#About">
+                About
+              </a>
+            </li>
+            <li>
+              <a class="text-teal-400 transition hover:text-teal-300" href="#Projects">
+                Projects
+              </a>
+            </li>
+            <!-- 
+          Repeat the li -> a elements to add Nav items for:
+           Skills, Projects and Contact here 
+      -->
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl space-y-16 bg-white min-h-screen 
+             mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+    <article class="border border-gray-200 rounded-xl shadow overflow-hidden">
+      <header class="bg-pink-700 text-amber-100 w-full">
+        <h1 class="text-3xl p-4">
+          Hello!
+        </h1>
+      </header>
+      <section class="space-y-4 p-4">
+        <p>
+          Welcome to Carol's Profile.
+        </p>
+      </section>
+    </article>
+    <article class="border border-gray-200 rounded-xl shadow overflow-hidden">
+      <header class="bg-gray-700 text-gray-100 w-full">
+        <h1 class="text-3xl text-gray-100 p-4">
+          Projects
+        </h1>
+      </header>
+      <div class="gap-4 p-4 grid grid-cols-3">
+        <!-- We add the project cards here -->
+        <section class="group">
+          <img alt="Photo: Image of Batman Rubber Duck" aria-description="Photo of Batman Rubber Duck by Brett Jordan.
+              The duck is black, with a yellow oval and batman symbol on 
+              it's belly, an orange beak, batman mask style eyes and ears." src="https://images.unsplash.com/photo-1559715541-5daf8a0296d0?
+                  q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0
+                  &ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-56 w-full rounded-xl object-cover shadow transition 
+                    group-hover:grayscale-80">
+          <div class="p-4">
+            <!-- title and one sentence description -->
+            <a href="#">
+              <h3 class="text-lg font-medium text-gray-900">
+                Rubber Duck Debugging
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              A demonstration application using Laravel, TailwindCSS, Livewire, Sanctum and more.
+            </p>
+          </div>
+        </section>
+
+        <section class="group">
+          <img alt="Photo: Image of Batman Rubber Duck" aria-description="Photo of Batman Rubber Duck by Brett Jordan.
+              The duck is black, with a yellow oval and batman symbol on 
+              it's belly, an orange beak, batman mask style eyes and ears." src="https://images.unsplash.com/photo-1559715541-5daf8a0296d0?
+                  q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0
+                  &ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-56 w-full rounded-xl object-cover shadow transition 
+                    group-hover:grayscale-80">
+          <div class="p-4">
+            <!-- title and one sentence description -->
+            <a href="#">
+              <h3 class="text-lg font-medium text-gray-900">
+                Rubber Duck Debugging
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              A demonstration application using Laravel, TailwindCSS, Livewire, Sanctum and more.
+            </p>
+          </div>
+        </section>
+      </div>
+      <span id="Contact"></span>
+    </article>
+  </main>
+
+  <footer>Site/Page Footer</footer>
+</body>
+
+</html>
